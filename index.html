@@ -4,12 +4,14 @@
 	<title> P I I L A N I | C O O K</title>
 
 	<!-- Bootstrap Link -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script> 
-	<script src="index.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- Animate Css -->
+  <link rel="stylesheet" href="animate.css">
+
 	<!-- Custom Css -->
 	<link rel="stylesheet" href="style.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
 <body>
 	<header class="header-image">
@@ -22,41 +24,144 @@
 	<div class="navigation">
 		<nav class="navbar">
 
-			<ul>
-				<li>home</li>
-				<li>about</li>
-				<li>work</li>
-				<li><a href="mailto:piilani@comcast.net">contact</a></li>
+			<ul id="home">
+				<li><a class="homebutton" href="#home" name="home">home</a></li>
+				<li><a class="aboutbutton" href="#about" name="about">about</a></li>
+				<li><a class="workbutton" href="#img" name="work">work</a></li>
+				<li><a class="contactbutton" href="#contact" name="contact">contact</a></li>
 			</ul>		
 
 		</nav>
 	</div>
 
-	<div class="grid" id="img">
-		<img class='grid-item' src="paintings/beckys_farm.jpg">
-		<img class='grid-item' src="paintings/calla_lilly.jpg">
-		<img class='grid-item' src="paintings/cottage_at_mauna_lani.jpg">
-		<img class='grid-item' src="paintings/country_palette.jpg">
-		<img class='grid-item' src="paintings/essence_of_hawaii.jpg">
-		<img class='grid-item' src="paintings/haleconias.jpg">
-		<img class='grid-item' src="paintings/home_sweet_home.jpg">
-		<img class='grid-item' src="paintings/pua_aloha.jpg">
-		<img class='grid-item' src="paintings/hono_hono_in_the_wild.jpg">
-		<img class='grid-item' src="paintings/jungle.jpg">
-		<img class='grid-item' src="paintings/flora_aquarious.jpg">
-		<img class='grid-item' src="paintings/kalakauas_kahaluu_retreat.jpg">
-		<img class='grid-item' src="paintings/mahis_roosters.jpg">
-		<img class='grid-item' src="paintings/mauna_kea_magic.jpg">
-		<img class='grid-item' src="paintings/volcano_rain_forest.jpg">
-		<img class='grid-item' src="paintings/na_pua_lani.jpg">
-		<img class='grid-item' src="paintings/new_zealand_landscape.jpg">
-		<img class='grid-item' src="paintings/vermont_landscape.jpg">
-		<img class='grid-item' src="paintings/waikiki_pm.jpg">
-		<img class='grid-item' src="paintings/obakes.jpg">
-		<img class='grid-item' src="paintings/waimea_truck_garden.jpg">
-		<img class='grid-item' src="paintings/yamhill_landscape.jpg">
+	<div class="grid effect-milo" id="img">
+		<div class="painting-item">
+			<p>Mauna Kea Magic</p>
+			<img class="grid-item" src="paintings/mauna_kea_magic.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Volcano Rain Forest</p>
+			<img class='grid-item' src="paintings/volcano_rain_forest.jpg">	
+		</div>
+		<div class="painting-item">
+			<p>Na Pua Lani</p>		
+			<img class='grid-item' src="paintings/na_pua_lani.jpg">
+		</div>
+		<div class="painting-item">
+			<p>New Zealand Landscape</p>
+
+			<img class='grid-item' src="paintings/new_zealand_landscape.jpg">
+		</div>
+		<div class="painting-item">
+			<p> Becky's Farm</p>
+			<img class='grid-item' src="paintings/beckys_farm.jpg">
+		</div>
+		<div class="painting-item">
+			<p> Calla Lilly</p>
+			<img class='grid-item' src="paintings/calla_lilly.jpg">
+		</div>
+		<div class="painting-item">
+			<p> Cottage at Mauna Lani</p>
+			<img class='grid-item' src="paintings/cottage_at_mauna_lani.jpg">
+		</div>
+		<div class="painting-item">
+			<p> Country Palette</p>
+			<img class='grid-item' src="paintings/country_palette.jpg">
+		</div>
+		<div class="painting-item">
+			<p> Essence of Hawaii</p>
+			<img class='grid-item' src="paintings/essence_of_hawaii.jpg">
+		</div>
+		<div class="painting-item">
+			<p> Haleconias</p>
+			<img class='grid-item' src="paintings/haleconias.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Home Sweet Home</p>
+			<img class='grid-item' src="paintings/home_sweet_home.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Pua Aloha</p>
+			<img class='grid-item' src="paintings/pua_aloha.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Hono Hono in the Wild</p>
+			<img class='grid-item' src="paintings/hono_hono_in_the_wild.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Jungle</p>
+			<img class='grid-item' src="paintings/jungle.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Flora Aquarious</p>
+			<img class='grid-item' src="paintings/flora_aquarious.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Kalakuaus Kahaluu Retreat</p>
+			<img class='grid-item' src="paintings/kalakauas_kahaluu_retreat.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Mahi's Roosters</p>
+			<img class='grid-item' src="paintings/mahis_roosters.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Vermont Landscape</p>
+			<img class='grid-item' src="paintings/vermont_landscape.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Waikiki PM</p>
+			<img class='grid-item' src="paintings/waikiki_pm.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Obakes</p>
+			<img class='grid-item' src="paintings/obakes.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Waimea Truck Garden</p>
+			<img class='grid-item' src="paintings/waimea_truck_garden.jpg">
+		</div>
+		<div class="painting-item">
+			<p>Yamhill Landscape</p>
+			<img class='grid-item' src="paintings/yamhill_landscape.jpg">
+		</div>
 	</div>
 
 
-</body>
-</html>
+			<h2>about the artist</h2>
+
+			<div id="about" class="about"><p>Piilani Cook is an accomplished painter, best known for her magnificent florals and landscapes, alive with color and movement. Piilani's work has been influenced and inspired by the many different places, people and cultures through out the world which she has experienced. Piilani, was born and raised on the island of Hawaii and her rich Hawaiian heritage was and continues to be the primary basis that has influenced her distinctive work.
+				Piilani's exquisite watercolors are created through an intricate multi-layered process taking patience and skill. Her paintings reflect the softness of the island air as well as the the vibrant life force that draws people to the islands. They are sensuous, warm, exciting and passionate. Each painting is a part of Piiiani created for a reason only known to the artist.
+				</p>
+				<p>
+					After graduating from high school in Hilo, Piilani studied Art at Boston University. She lived in Southern California for many years where she furthered her interest in watercolor with Millard Sheets, Milford Zorne and Robert Wood. She now spends time between Hawaii and Oregon where she is well known for her beautiful vineyard landscapes.
+					</p>
+					<p>
+						Piilani has a zest for life with a touch of whimsy that at times you will see in her paintings She paints as she lives, with a strong appreciation for enjoying life to its fullest and always looking ahead toward a new adventure. You can find Piilani and her husband Bob, walking the ruins of Turkey, exploring the Amazon, trekking through the Andes, painting in the South of France, visiting her Grandchildren or in Hawaii with her family and many friends always with her sketch book at hand.
+						Piilani enjoys the process involved in commissioned paintings. With just a short consultation with a client, Piiiani has the unique ability to create that special piece that can't be found. "Each painting has its own fundamental nature. By communicating with clients, I try to understand what it is that they are looking for and to capture that in a painting created just for themselves."
+						</p>
+						<p>
+							Piilani's originals are magnificent but because of the time involved in creating a painting, Piilani now also offers numbered and signed limited edition "enhanced" Giclee reproductions making her work more available. All "enhanced" Giclee's are unique making each piece an original in itself but at a reduced cost.
+							Piilani is a past member of the Canadian Water Colour Society, the Honolulu Watercolor Society and is presently a member of the Oregon Watercolor Society of which she is an award winner. Her paintings are represented in collections in Canada, Europe and the U.S.</p></div>
+
+							<div id="contact" class="contact">
+
+								<a href="https://www.instagram.com/piilani_cook_art/" target="_blank">
+									<img src="social_icons/instagram.png"alt="instagram"/>
+								</a>
+								<a href="https://www.facebook.com/Piilani-Cook-1154422721258451/?skip_nax_wizard=true" target="_blank">
+									<img src="social_icons/facebook.png"alt="Facebook" />
+								</a>
+								<a href="mailto:piilani@comcast.net" target="_blank">
+									<img src="social_icons/email.png"alt="email" />
+								</a>
+
+							</div>
+
+							<!-- JQuery Library -->
+							<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+							<!-- Balanced Gallery JQuery Plugin -->
+							<script type="text/javascript" src="jquery.balanced-gallery.min.js"></script>
+							<script src="index.js"></script>
+
+						</body>
+						</html>
